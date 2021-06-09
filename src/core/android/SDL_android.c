@@ -1008,7 +1008,7 @@ JNIEXPORT void JNICALL SDL_JAVA_INTERFACE(onNativeSurfaceChanged)(JNIEnv *env, j
 
         /* If the surface has been previously destroyed by onNativeSurfaceDestroyed, recreate it here */
         if (data->egl_surface == EGL_NO_SURFACE) {
-            data->egl_surface = SDL_EGL_CreateSurface(_this, (NativeWindowType) data->native_window);
+//            data->egl_surface = SDL_EGL_CreateSurface(_this, (NativeWindowType) data->native_window);
         }
 
         /* GL Context handling is done in the event loop because this function is run from the Java thread */

@@ -81,6 +81,7 @@ Android_CreateWindow(_THIS, SDL_Window * window)
 
     /* Do not create EGLSurface for Vulkan window since it will then make the window
        incompatible with vkCreateAndroidSurfaceKHR */
+/*
     if ((window->flags & SDL_WINDOW_OPENGL) != 0) {
         data->egl_surface = SDL_EGL_CreateSurface(_this, (NativeWindowType) data->native_window);
 
@@ -91,6 +92,7 @@ Android_CreateWindow(_THIS, SDL_Window * window)
             goto endfunction;
         }
     }
+*/
 
     window->driverdata = data;
     Android_Window = window;
